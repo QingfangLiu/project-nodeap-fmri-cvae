@@ -1,8 +1,4 @@
-# 🧠 TMS Effect Analysis via Variational Autoencoders (VAEs)
-
-This repository contains code and analyses for uncovering the effects of Transcranial Magnetic Stimulation (TMS) using resting-state fMRI data and Variational Autoencoders (VAEs).
-
-## 📌 Project Goal
+# 📌 Project Goal
 
 To identify and characterize the effect of TMS on brain connectivity patterns by applying VAEs and Conditional VAEs (cVAEs) to resting-state fMRI-derived functional connectivity (FC) data.
 
@@ -18,7 +14,7 @@ To identify and characterize the effect of TMS on brain connectivity patterns by
 
 ## 🧪 Model Variants
 
-1. `VAE` on AAL-based FC  
+1. `VAE` on AAL-based FC as a sanity check on subject identification using VAEs
 2. `VAE` on AAL-sphere FC  
 3. `Conditional VAE (cVAE)` on AAL-sphere FC, with subject ID added to both encoder and decoder
 
@@ -37,11 +33,6 @@ To identify and characterize the effect of TMS on brain connectivity patterns by
 - Flexible integration of subject-level conditions  
 - Modularized code for embedding, plotting, and model evaluation  
 
-## ⏭️ Next Steps
-
-- Generate behavioral effect summary for correlation analyses  
-- Test alternative ROIs for latent space outputs  
-- Improve robustness of conditional modeling  
 
 ## 📁 Repository Structure
 
@@ -54,10 +45,3 @@ To identify and characterize the effect of TMS on brain connectivity patterns by
 ├── README.md             # This file
 ```
 
-## 🔒 Data Access
-
-Note: Due to privacy and IRB restrictions, raw MRI data and some intermediate files are not publicly shared.
-
----
-
-For questions or collaboration requests, feel free to contact the maintainer.

@@ -1,4 +1,6 @@
-# cVAE-fMRI: Subject-Conditioned Variational Autoencoder for Functional Connectivity
+# TMS Effect Analysis via Variational Autoencoders (VAEs)
+
+This repository contains code and analyses for uncovering the effects of Transcranial Magnetic Stimulation (TMS) using resting-state fMRI data and Variational Autoencoders (VAEs).
 
 This repo explores how a conditional VAE can learn meaningful representations from resting-state fMRI functional connectivity data.
 
