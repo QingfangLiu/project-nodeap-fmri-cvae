@@ -44,7 +44,7 @@ def load_all_fc_data(sub_cond_path, base_nifti_folder, mat_filename='conn_matrix
         Tuple of np.ndarray: (all_corr_data, all_tms_type, all_subject_id, all_stimloc, all_session)
     """
     SubInfo = pd.read_excel(sub_cond_path)
-    Subs = SubInfo[SubInfo['Include'] == 1]['SubID'].tolist()
+    Subs = SubInfo['SubID'].tolist()
     sessions = ['D0', 'S1D1', 'S1D2', 'S2D1', 'S2D2', 'S3D1', 'S3D2']
     
     order_map = {
@@ -64,8 +64,6 @@ def load_all_fc_data(sub_cond_path, base_nifti_folder, mat_filename='conn_matrix
 
     for _, row in SubInfo.iterrows():
         subject_id = row['SubID']
-        if row['Include'] != 1:
-            continue
         stimloc = row['StimLoc']
         tms_types = order_map.get(row['StimOrder'], ['N'] * 7)
         for j, session in enumerate(sessions):
