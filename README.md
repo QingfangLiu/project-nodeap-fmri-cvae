@@ -12,7 +12,6 @@ There are two versions:
 
 ## Repository Structure
 
-```text
 ├── data/
 │   ├── data_FC/                    # FC matrices for each subject/session
 │   │   └── NODEAP_06/
