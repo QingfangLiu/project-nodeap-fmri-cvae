@@ -12,6 +12,7 @@ There are two versions:
 
 ## Repository Structure
 
+```text
 ├── data/
 │   ├── data_FC/                    # FC matrices for each subject/session
 │   │   └── NODEAP_06/
@@ -24,8 +25,7 @@ There are two versions:
 ├── v2_loso/                       # Scripts and configs for LOSO evaluation
 ├── utils/                         # Shared helper functions
 └── README.md                      # You are here
-
-
+```
 
 ---
 
