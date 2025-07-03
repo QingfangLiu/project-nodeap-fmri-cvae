@@ -42,6 +42,7 @@ There are two versions:
   - Gender
   - Birth year
   - Stimulation location
+  - Stimulation order
   - Age at scan
   - Condition (e.g., real vs sham TMS)
 
