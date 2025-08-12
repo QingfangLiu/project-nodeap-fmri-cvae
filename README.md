@@ -1,6 +1,6 @@
 # TMS Effect Analysis via Variational Autoencoders (VAEs)
 
-This repository contains code and analyses for uncovering the effects of Transcranial Magnetic Stimulation (TMS) using resting-state fMRI data and Variational Autoencoders (VAEs).
+This repository contains code and analyses for uncovering the effects of Transcranial Magnetic Stimulation (TMS) using resting-state fMRI data and Variational Autoencoders (VAEs). This is part of a cog neuro project named NODEAP.
 
 There are two versions:
 
