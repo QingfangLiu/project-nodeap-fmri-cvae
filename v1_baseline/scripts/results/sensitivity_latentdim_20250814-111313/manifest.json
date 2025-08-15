@@ -1,0 +1,14 @@
+{
+  "latent_dim_grid": [
+    2,
+    4,
+    8,
+    12,
+    16,
+    32
+  ],
+  "num_epoch": 500,
+  "lr": 0.0003,
+  "hidden_dim": 64,
+  "generated_at": "20250814-111313"
+}
