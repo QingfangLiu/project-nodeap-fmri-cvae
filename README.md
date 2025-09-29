@@ -1,11 +1,11 @@
 # TMS Effect Analysis via Variational Autoencoders (VAEs)
 
-This repository contains code and analyses for uncovering the effects of Transcranial Magnetic Stimulation (TMS) using resting-state fMRI data and Variational Autoencoders (VAEs). This is part of a cog neuro project named NODEAP.
+This repository contains code and analyses for uncovering the effects of Transcranial Magnetic Stimulation (TMS) using resting-state fMRI data and Variational Autoencoders (VAEs). This is part of a cog neuro project with other parts of analysis hosted in another repo https://github.com/QingfangLiu/project-nodeap-core/tree/main
 
 There are two versions:
 
 - **[v1_baseline](./v1_baseline/):** Initial implementation using VAE and subject-conditioned cVAE fitted to all subjects. 
-- **[v2_loso](./v2_loso/):** Extended version using Leave-One-Subject-Out cross-validation to test generalization.
+- **[v2_loso](./v2_loso/):** Extended version using Leave-One-Subject-Out cross-validation to circumvent model overfitting. 
 
 
 ---
@@ -34,17 +34,18 @@ There are two versions:
 - **Functional Connectivity Matrices**  
   Located in `data/data_FC/`, organized by subject and session. Each session folder includes:
   - `conn_matrix.mat`: AAL-based FC matrix
-  - `conn_matrix_w_sphere.mat`: AAL-based FC matrix using spherical ROIs
+  - `conn_matrix_w_sphere.mat`: AAL-based FC matrix between AAL ROIs and spherical ROIs
 
-- **Subject Metadata**  
-  `data/subject_info.xlsx` contains subject-level information used for model conditioning and analysis:
-  - Subject ID
-  - Gender
-  - Birth year
-  - Stimulation location
-  - Stimulation order
-  - Age at scan
-  - Condition (e.g., real vs sham TMS)
+**Subject Metadata**  
+`data/SubConds.xlsx` provides subject-level information for model conditioning and analysis:
+
+- **SubID**: Original subject code (e.g., NODEAP_*)  
+- **StimLoc**: Stimulation site (Anterior vs. Posterior OFC)  
+- **StimOrder**: Numeric code for session order  
+- **tms_order_letters**: Human-readable sequence (C = cTBS, S = sham)  
+- **Age**, **Sex**: Basic demographics  
+
+  
 
 
 
