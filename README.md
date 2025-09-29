@@ -111,5 +111,7 @@ project-nodeap-fmri-cvae/
   - **tms_order_letters**: Human-readable session sequence (C = cTBS, S = sham)  
   - **Age**, **Sex**: Demographic information  
 
-
-
+## Contact
+Qingfang Liu  
+Research Fellow, National Institute on Drug Abuse (NIDA) 
+Email: psychliuqf@gmail.com
