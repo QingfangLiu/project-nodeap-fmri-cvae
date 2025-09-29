@@ -19,7 +19,6 @@ def vectorize_fc(fc_mat, row_idx=None):
         np.ndarray: 1D vector of connectivity values.
     """
     if row_idx is not None:
-        # Return the full row (exclude self-connection if square)
         row = fc_mat[:, row_idx]
         return row.flatten()
     else:
