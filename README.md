@@ -32,6 +32,12 @@ I tested several VAE-based models with different input features and training sch
 
 2. **VAE on AAL-sphere FC**  
    - Restricts analysis to seed and target ROIs.  
+   - Involves **4 ROIs**:  
+     - `0`: aOFC seed  
+     - `1`: aOFC target  
+     - `2`: pOFC seed  
+     - `3`: pOFC target  
+   - See [fc_AAL_spheres scripts](https://github.com/QingfangLiu/project-nodeap-core/tree/main/scripts/fc_AAL_spheres) for implementation details.  
 
 3. **Conditional VAE (cVAE) on AAL-sphere FC**  
    - Adds subject ID as a condition to both encoder and decoder.  
