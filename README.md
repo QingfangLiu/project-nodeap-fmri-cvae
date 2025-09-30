@@ -66,34 +66,34 @@ You can find the exact notebook here:
 
 ## Repository Structure
 
-```text
+```
 project-nodeap-fmri-cvae/
 ├── data/                          
-│   ├── data_FC/                   # Functional connectivity (FC) matrices per subject/session
-│   │   └── NODEAP_06/             # Example subject folder
-│   │       └── D0/                # Example session folder (Day 0 / baseline)
-│   │           ├── conn_matrix.mat
-│   │           └── conn_matrix_w_sphere.mat
-│   └── SubConds.xlsx              # Subject condition metadata
+│   ├── data_FC/                   # Functional connectivity (FC) matrices organized by subject/session
+│   │   └── NODEAP_06/             # Example subject
+│   │       └── D0/                # Example session (Day 0 / baseline)
+│   │           ├── conn_matrix.mat             # AAL-based FC matrix
+│   │           └── conn_matrix_w_sphere.mat   # FC matrix between AAL ROIs and spherical ROIs
+│   └── SubConds.xlsx              # Subject metadata (stimulation site, order, demographics, etc.)
 │
-├── outputs/                       # Model outputs
+├── outputs/                       # Model outputs for downstream analyses and plotting
 │
 ├── scripts/                       # Main analysis scripts
-│   ├── vae/                       # VAE model notebooks
+│   ├── vae/                       # Variational Autoencoder (VAE) notebooks
 │   │   ├── vae_fc_aal_raw.ipynb
 │   │   ├── vae_fc_aal_wtd.ipynb
 │   │   ├── vae_fc_aal_spheres_raw.ipynb
 │   │   └── vae_fc_aal_spheres_wtd.ipynb
 │   │
-│   ├── cvae/                      # Conditional VAE model notebooks
-│   │   ├── cvae_fc_aal_spheres_raw.ipynb
-│   │   └── cvae_fc_aal_spheres_wtd.ipynb
+│   ├── cvae/                      # Conditional VAE (cVAE) notebooks
+│   │   ├── cvae_fc_aal_spheres_raw.ipynb   # Main notebook (results reported in the manuscript)
+│   │   └── cvae_fc_aal_spheres_wtd.ipynb   # Weighted variant (robustness check for class imbalance)
 │   │
 │   └── utils/                     # Shared helper modules
-│       ├── bootstrap.py           # Bootstrapping procedures
-│       ├── data_utils.py          # Data loading and preprocessing
-│       ├── models.py              # Model architectures (VAE / CVAE)
-│       ├── train_utils.py         # Training loops and evaluation
+│       ├── bootstrap.py           # Package imports and setup
+│       ├── data_utils.py          # Data loading and preprocessing functions
+│       ├── models.py              # Model architectures (VAE / cVAE)
+│       ├── train_utils.py         # Training loops and evaluation utilities
 │       └── utils_plotting.py      # Plotting and visualization utilities
 │
 └── README.md                      # Main project description
@@ -117,6 +117,9 @@ project-nodeap-fmri-cvae/
   - **Age**, **Sex**: Demographic information  
 
 ## Contact
+
 Qingfang Liu  
+
 Research Fellow, National Institute on Drug Abuse (NIDA) 
+
 Email: psychliuqf@gmail.com
