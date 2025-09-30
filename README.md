@@ -54,7 +54,12 @@ cTBS over the anterior OFC (aOFC) produced greater deviations in functional conn
 For more details on the analyses, equations, behavioral links, and plots, see our manuscript:  
 
 Liu et al., *Distinct contributions of anterior and posterior orbitofrontal cortex to outcome-guided behavior*,  
-*Current Biology* (in press). 
+*Current Biology* (in press).  
+
+The results reported in the manuscript are based on the cVAE **raw version**, while the **weighted version** serves as an important robustness check for potential class imbalance.  
+
+You can find the exact notebook here:  
+[project-nodeap-fmri-cvae/scripts/cvae/cvae_fc_aal_spheres_raw.ipynb](https://github.com/QingfangLiu/project-nodeap-fmri-cvae/blob/main/scripts/cvae/cvae_fc_aal_spheres_raw.ipynb)
 
 
 ---
